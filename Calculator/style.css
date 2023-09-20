@@ -1,0 +1,93 @@
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, black, grey);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.calculatorBody
+{
+  margin-top: 1%;
+  background-color: rgb(137, 137, 137);
+  display: grid;
+  justify-content: center;
+  height: fit-content;
+  width: 30rem;
+  padding-bottom: 1.5rem;
+  box-shadow: -2px -2px 15px #000;
+  border-radius: 10px;
+}
+
+.inputTextbox_div
+{
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.textBoxProp
+{
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.inputTextbox_class
+{
+  height: 4rem;
+  width: 90%;
+  font-size: 4rem;
+  text-align: right;
+  border-radius: 10px;
+}
+
+.buttonContainer
+{
+  background-color: rgb(97, 97, 97);
+  padding-top: 5%;
+  padding-bottom: 6%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.buttonRow
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.buttonProp
+{
+  font-size: xx-large;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(45, 45, 45);
+  border: 1px solid white;
+  height: 4.5rem;
+  width: 5.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  box-shadow: -2px -2px 15px #000;
+}
+
+.buttonProp:hover
+{
+  background-color: rgb(15, 15, 15);
+}
