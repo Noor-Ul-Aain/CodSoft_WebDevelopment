@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="SimpleCalculatoeIconApp.ico" type="image/ico" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="calculatorBody">
+      <div class="inputTextbox_div">
+        <input
+          type="text"
+          name="inputTextbox"
+          id="inputTextbox_ID"
+          class="inputTextbox_class"
+        />
+      </div>
+
+      <div class="buttonContainer">
+        <div class="buttonRow">
+          <input
+            type="button"
+            value="C"
+            name="clearButton"
+            id="clearButton_ID"
+            class="buttonProp"
+            onclick="clearTextbox()"
+          />
+          <input
+            type="button"
+            value="AC"
+            name="allClearButton"
+            id="allClearButton_ID"
+            class="buttonProp"
+            onclick="clearStackAndDisplay()"
+          />
+          <input
+            type="button"
+            value="%"
+            name="percentageOperator"
+            id="percentageOperator_ID"
+            class="buttonProp"
+            onclick="pushToStack(Number(document.getElementById(`inputTextbox_ID`).value),'%')"
+          />
+          <input
+            type="button"
+            value="+"
+            name="plusOperator"
+            id="plusOperator_ID"
+            class="buttonProp"
+            onclick="pushToStack(Number(document.getElementById(`inputTextbox_ID`).value),'+')"
+          />
+        </div>
+
+        <div class="buttonRow">
+          <input
+            type="button"
+            value="7"
+            name="sevenButton"
+            id="sevenButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(7)"
+          />
+          <input
+            type="button"
+            value="8"
+            name="eightButton"
+            id="eightButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(8)"
+          />
+          <input
+            type="button"
+            value="9"
+            name="nineButton"
+            id="nineButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(9)"
+          />
+          <input
+            type="button"
+            value="/"
+            name="divideOperator"
+            id="divideOperator_ID"
+            class="buttonProp"
+            onclick="pushToStack(Number(document.getElementById(`inputTextbox_ID`).value),'/')"
+          />
+        </div>
+
+        <div class="buttonRow">
+          <input
+            type="button"
+            value="4"
+            name="fourButton"
+            id="fourButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(4)"
+          />
+          <input
+            type="button"
+            value="5"
+            name="fiveButton"
+            id="fiveButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(5)"
+          />
+          <input
+            type="button"
+            value="6"
+            name="sixButton"
+            id="sixButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(6)"
+          />
+          <input
+            type="button"
+            value="*"
+            name="multiplyOperator"
+            id="multiplyOperator_ID"
+            class="buttonProp"
+            onclick="pushToStack(Number(document.getElementById(`inputTextbox_ID`).value),'*')"
+          />
+        </div>
+
+        <div class="buttonRow">
+          <input
+            type="button"
+            value="1"
+            name="oneButton"
+            id="oneButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(1)"
+          />
+          <input
+            type="button"
+            value="2"
+            name="twoButton"
+            id="twoButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(2)"
+          />
+          <input
+            type="button"
+            value="3"
+            name="threeButton"
+            id="threeButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(3)"
+          />
+          <input
+            type="button"
+            value="-"
+            name="minusOperator"
+            id="minusOperator_ID"
+            class="buttonProp"
+            onclick="pushToStack(Number(document.getElementById(`inputTextbox_ID`).value),'-')"
+          />
+        </div>
+
+        <div class="buttonRow">
+          <input
+            type="button"
+            value="0"
+            name="zeroButton"
+            id="zeroButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(0)"
+          />
+          <input
+            type="button"
+            value="."
+            name="decimalButton"
+            id="decimalButton_ID"
+            class="buttonProp"
+            onclick="concatTextboxValue(`.`)"
+          />
+          <input
+            type="button"
+            value="Ans"
+            name="lastAnswerButton"
+            id="lastAnswerButton_ID"
+            class="buttonProp"
+            onclick="calculatedAnswer()"
+          />
+          <input
+            type="button"
+            value="="
+            name="calculateAnswerButton"
+            id="calculateAnswerButton_ID"
+            class="buttonProp"
+            onclick="calculate()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
