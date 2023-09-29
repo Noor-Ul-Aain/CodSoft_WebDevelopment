@@ -1,0 +1,152 @@
+body {
+    display: grid;
+    height: fit-content;
+    width: 99vw;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkslateblue;
+}
+
+header {
+    margin-left: -0.5rem;
+    width: 99vw;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid pink; */
+}
+
+.section_tag {
+    /* background-color: blueviolet; */
+    width: 99vw;
+    text-align: center;
+}
+
+.section_buttonPages {
+    /* background-color: brown; */
+    width: 99vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonProp {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+}
+
+.buttonProp:hover {
+    /* height: fit-content;
+    width: fit-content; */
+    background-color: rgb(43, 43, 99);
+    border: 3px solid rgb(43, 43, 99);
+    transition: 200ms;
+    border-radius: 3px;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 99vw;
+    height: 85vh;
+}
+
+.dataDiv {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding-left: 3rem;
+    margin-top: -18%;
+    padding-right: 2rem;
+}
+
+.shapeContainer {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+    overflow: hidden;
+}
+
+.shapeDiv {
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    width: 70rem;
+    height: 70rem;
+    background-image: url("src/JPG/architecture-1018362_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: green; */
+    /* display: grid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shapeDiv_inner {
+    opacity: 1;
+    border-radius: 50%;
+    background-color: darkslateblue;
+    /* background-color: red; */
+    width: 30rem;
+    height: 30rem;
+}
+
+#floating_footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: fit-content;
+    width: 100%;
+}
+
+.footerDiv {
+    /* border: 1px solid palevioletred; */
+    background-color: rgba(66, 59, 111, 0.616);
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 99vw;
+    padding-bottom: 1rem;
+    /* padding-right: -2rem; */
+}
+
+.footer_div1 {
+    display: grid;
+    width: 20%;
+    background-image: url('src/SVG/icons8-idea.svg');
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    padding-right: 2.5rem;
+    background-position: center left;
+}
+
+.footer_div2 {
+    display: grid;
+    width: 20%;
+    background-image: url('src/PNG/icons8-monitoring-75.png');
+    background-repeat: no-repeat;
+    padding-left: 9%;
+    padding-right: 2.5rem;
+    background-position: center left;
+}
+
+.footer_div3 {
+    display: grid;
+    width: 20%;
+    background-image: url('src/PNG/icons8-communication-49.png');
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    background-position: center left;
+    margin-right: 2rem;
+}
