@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("src/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+  height: 100vh;
+  width: 96vw;
+  background-repeat: no-repeat;
+  background-color: rgb(28, 20, 36);
+  background-attachment: fixed;
+  background-size: contain;
+  color: rgba(242, 241, 243, 255);
+  font-family: Roboto;
+}
+
+header {
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 99%;
+  padding-top: 1%;
+}
+
+.section_h2 {
+  /* border: 1px solid red; */
+  width: 40%;
+}
+
+h1 {
+  /* border: 1px solid rgb(0, 255, 21); */
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.nevbarButtons_div {
+  /* border: 1px solid orchid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  padding-top: 1.5%;
+  padding-bottom: 0;
+  width: 60%;
+}
+
+.nevbarButtons {
+  border: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* border: 1px solid orange; */
+  height: 100%;
+  width: 15%;
+  color: rgba(242, 241, 243);
+  background-color: transparent;
+  font-size: x-large;
+  text-align: center;
+}
+
+.nevbarButtons:hover {
+  transition: 600ms;
+  color: rgb(80, 46, 114);
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.sectionProp {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv1 {
+  /* border: 1px solid white; */
+  display: grid;
+  align-items: center;
+  height: 95vh;
+  padding-left: 7%;
+  width: 3rem;
+  padding-right: 2rem;
+}
+
+.mainDiv1_div {
+  display: grid;
+  height: 20%;
+  margin-top: -4rem;
+  /* border: 2px solid pink; */
+}
+
+.mainDiv1_button {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.mainDiv1_button:hover {
+  transition: 500ms;
+  background-color: rgba(80, 46, 114, 0.444);
+  border-radius: 15%;
+}
+
+#mainDiv1_button1_ID {
+  background-image: url("src/SVG/icons8-linkedin-500.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#mainDiv1_button2_ID {
+  background-image: url("src/SVG/icons8-github-500.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mainDiv2 {
+  /* border: 1px solid rgb(255, 0, 0); */
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 2.5%;
+  font-size: 4rem;
+}
+
+h3 {
+  margin-top: 0%;
+  font-size: 2rem;
+}
+
+h2,
+h3 {
+  margin-bottom: 0%;
+}
+
+.contact_me {
+  transition: 600ms;
+  background-color: rgba(80, 46, 114, 0.444);
+  height: 4rem;
+  width: 12rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact_me:hover {
+  transition: 500ms;
+  height: 3rem;
+  width: 12rem;
+}
+
+.mainDiv3 {
+  /* border: 1px solid rgb(43, 255, 0); */
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: fit-content;
+}
+
+.mainDiv3_image {
+  margin-top: -9rem;
+  height: 50%;
+  width: 50%;
+  border-radius: 2pc;
+}
+
+#Section_About {
+  display: grid;
+}
+
+.about_para {
+  margin-left: 4rem;
+  margin-right: 3rem;
+  /* border: 2px solid red; */
+}
+
+#Section_Showcase {
+  display: grid;
+}
+
+.vedio_div {
+  /* border: 1px solid red; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.videoDivProp {
+  display: grid;
+  width: 50pc;
+  margin-bottom: 3rem;
+  border-radius: 1pc;
+  box-shadow: 2px -2px 15px rgba(80, 46, 114, 0.365);
+}
+
+footer {
+  margin-left: -0.5rem;
+  margin-right: -1.6rem;
+  background-color: rgba(80, 46, 114, 0.365);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#Section_Contacts {
+  display: grid;
+}
+
+#floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding-bottom: 2%;
+  padding-right: 1%;
+  padding-left: 1%;
+  height: 1rem;
+  width: 1rem;
+  background-color: transparent;
+  background-image: url("src/PNG/icons8-double-up-100.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+}
